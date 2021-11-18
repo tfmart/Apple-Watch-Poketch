@@ -10,6 +10,7 @@ import SwiftUI
 struct CalculatorButton: View {
     
     @EnvironmentObject var config: Config
+    let sfx = SFXManager()
     
     @State var pressed = false
 
@@ -31,6 +32,7 @@ struct CalculatorButton: View {
             DragGesture(minimumDistance: 0)
                 .onChanged({ touch in
                     pressed = true
+                    sfx.play(sound: .buttonPress)
                 })
                 .onEnded({ touch in
                     pressed = false

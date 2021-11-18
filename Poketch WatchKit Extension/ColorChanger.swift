@@ -10,6 +10,7 @@ import SwiftUI
 struct ColorChanger: View {
     
     @EnvironmentObject var config: Config
+    let sfx = SFXManager()
     
     @State var sliderNotch = 0
     @State var sliderLocation = 0.0
@@ -50,6 +51,7 @@ struct ColorChanger: View {
                         DragGesture(minimumDistance: 0)
                             .onChanged({ touch in
                                 // To match the original games, distance from notch to touch input is used without accounting for the offset of the touch to the center of the slider button
+                                sfx.play(sound: .buttonPress)
                                 let x = touch.location.x
                                 if x < -4.0 * sliderNotchSize + sliderNotchSize * 2 {
                                     setNotch(notch: 0)

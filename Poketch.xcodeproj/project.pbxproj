@@ -38,6 +38,9 @@
 		4AE7F09127404A9100459A5D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7F09027404A9100459A5D /* Calculator.swift */; };
 		4AE7F09327404C7000459A5D /* CalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7F09227404C7000459A5D /* CalculatorButton.swift */; };
 		4AE7F0952741840700459A5D /* MarkingMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE7F0942741840700459A5D /* MarkingMap.swift */; };
+		7C833E742746097F008EB8B1 /* button.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7C833E732746097F008EB8B1 /* button.m4a */; };
+		7C833E77274609AD008EB8B1 /* change.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7C833E752746098E008EB8B1 /* change.m4a */; };
+		7C8798D52745C8510035FE76 /* SFXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8798D42745C8510035FE76 /* SFXManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		4AE7F09027404A9100459A5D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		4AE7F09227404C7000459A5D /* CalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift; sourceTree = "<group>"; };
 		4AE7F0942741840700459A5D /* MarkingMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkingMap.swift; sourceTree = "<group>"; };
+		7C833E732746097F008EB8B1 /* button.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.m4a; sourceTree = "<group>"; };
+		7C833E752746098E008EB8B1 /* change.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = change.m4a; sourceTree = "<group>"; };
+		7C8798D42745C8510035FE76 /* SFXManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFXManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,8 +227,10 @@
 				4AABA7E92721222A00FC9B75 /* Config.swift */,
 				4ACC462F2743196E007DED91 /* Complication.swift */,
 				4AD2A94F26D0B89000126756 /* ComplicationController.swift */,
+				7C8798D42745C8510035FE76 /* SFXManager.swift */,
 				4AD2A95126D0B89200126756 /* Assets.xcassets */,
 				4AD2A95626D0B89200126756 /* Info.plist */,
+				7C8798D12745C5EA0035FE76 /* SFX */,
 				4AD2A95326D0B89200126756 /* Preview Content */,
 			);
 			path = "Poketch WatchKit Extension";
@@ -234,6 +242,15 @@
 				4AD2A95426D0B89200126756 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C8798D12745C5EA0035FE76 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+				7C833E732746097F008EB8B1 /* button.m4a */,
+				7C833E752746098E008EB8B1 /* change.m4a */,
+			);
+			path = SFX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +380,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C833E77274609AD008EB8B1 /* change.m4a in Resources */,
+				7C833E742746097F008EB8B1 /* button.m4a in Resources */,
 				4AD2A95526D0B89200126756 /* Preview Assets.xcassets in Resources */,
 				4AD2A95226D0B89200126756 /* Assets.xcassets in Resources */,
 			);
@@ -403,6 +422,7 @@
 				4AD2A96926D0B9AC00126756 /* DigitalWatch.swift in Sources */,
 				4A48C2D0271E29CA00301A02 /* Counter.swift in Sources */,
 				4A42C225271F7A0E00CE870E /* Pedometer.swift in Sources */,
+				7C8798D52745C8510035FE76 /* SFXManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

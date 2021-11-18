@@ -10,6 +10,7 @@ import Dynamic
 
 struct ContentView: View {
     @EnvironmentObject var config: Config
+    let sfx = SFXManager()
     
     @State var views: [AnyView] = []
     @State var viewIndex = 0
@@ -52,6 +53,7 @@ struct ContentView: View {
                                 viewIndex = views.count - 1
                             }
                             scrollAmount = Double(viewIndex + 1)
+                            sfx.play(sound: .changeComplication)
                         }
                     }
                     touchTime = nil
